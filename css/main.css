@@ -4089,12 +4089,18 @@ section.section--categories2 .section__box {
 }
 section.section--stand {
   margin-top: 70px;
-  background-color: #fff;
+  background-color: #1d3a59;
 }
 @media (min-width: 720px) {
   section.section--stand {
     margin-top: 90px;
   }
+}
+section.section--stand .section__bg {
+  opacity: 0.2;
+}
+section.section--stand .section__header {
+  border-color: rgba(255,255,255,0.3);
 }
 section.section--stand .section__banner {
   background-color: #1d3a59;

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=67815" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=67815" type="text/javascript"></script>
+    <link href="css/main.css?v=80843" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=80843" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
   </head>
   <body>
-    <header>
+    <header class="header--colorstatic">
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__inner">
@@ -46,10 +46,7 @@
                   <div class="header__menu">
                     <nav>
                       <ul>
-                        <li class="header__nav__li"><a data-goto=".section--main">Inicio</a></li>
-                        <li class="header__nav__li"><a data-goto=".section--video">Quienes somos</a></li>
-                        <li class="header__nav__li"><a data-goto=".section--features">Características</a></li>
-                        <li class="header__nav__li"><a data-goto=".section--trademarks">Nuestras marcas</a></li>
+                        <li class="header__nav__li"><a href="home.html">Categorías</a></li>
                       </ul>
                     </nav>
                   </div>
@@ -82,10 +79,7 @@
                 <div class="header__nav__nav__body">
                   <div class="header__nav__nav__menu"> 
                     <ul>
-                      <li class="header__nav__li"><a data-goto=".section--main">Inicio</a></li>
-                      <li class="header__nav__li"><a data-goto=".section--video">Quienes somos</a></li>
-                      <li class="header__nav__li"><a data-goto=".section--features">Características</a></li>
-                      <li class="header__nav__li"><a data-goto=".section--trademarks">Nuestras marcas</a></li>
+                      <li class="header__nav__li"><a href="home.html">Categorías</a></li>
                     </ul>
                   </div>
                 </div>
@@ -95,7 +89,86 @@
         </div>
       </div>
     </header>
-    <div id="sections"></div>
+    <div id="sections">
+      <section class="section--stand">
+        <div class="section__wrap section__wrap--xs">
+          <div class="section__header">
+            <div class="section__banner">
+              <div class="section__back"><a href="stands-2.html"><img src="img/icons/icon-back.png"><span>Volver a las categorías</span></a></div>
+              <div class="section__banner__body">
+                <div class="section__text"> <span class="section__tag">Pinturas</span>
+                  <h3 class="section__title">Bienvenido a <strong>Sika</strong></h3>
+                </div>
+                <div class="section__icon"> <img src="img/icons/logo-3.png"></div>
+              </div>
+            </div>
+          </div>
+          <div class="section__body"> 
+            <div class="section__stand"> 
+              <div class="section__image"> <img src="img/uploads/single-stand.png"></div>
+              <div class="section__videoiframe">
+                 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/80YxPjpl-ZM?si=BVCIRW92VWhEnKdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="section__actions">
+                <div class="section__actions__box">
+                  <div class="section__action">
+                    <div class="section__icon"><img src="img/icons/icon-action-4.png"></div>
+                    <div class="section__text"><a href="#">Catálogo</a></div>
+                  </div>
+                  <div class="section__action">
+                    <div class="section__icon"><img src="img/icons/icon-action-3.png"></div>
+                    <div class="section__text"><a href="#">Lista de precios 1</a></div>
+                  </div>
+                  <div class="section__action">
+                    <div class="section__icon"><img src="img/icons/icon-action-3.png"></div>
+                    <div class="section__text"><a href="#">Lista de precios 2</a></div>
+                  </div>
+                  <div class="section__action">
+                    <div class="section__icon"><img src="img/icons/icon-action-3.png"></div>
+                    <div class="section__text"><a href="#">Lista de precios 3</a></div>
+                  </div>
+                </div>
+                <div class="section__actions__box">
+                  <div class="section__action">
+                    <div class="section__icon"><img src="img/icons/icon-action-1.png"></div>
+                    <div class="section__text"><a href="#">Whatsapp</a></div>
+                  </div>
+                  <div class="section__action">
+                    <div class="section__icon"><img src="img/icons/icon-action-6.png"></div>
+                    <div class="section__text"><a href="#">Formulario de contacto</a></div>
+                  </div>
+                  <div class="section__action">
+                    <div class="section__icon"><img src="img/icons/icon-action-5.png"></div>
+                    <div class="section__text"><a href="#">Encuesta</a></div>
+                  </div>
+                  <div class="section__action">
+                    <div class="section__icon"><img src="img/icons/icon-action-7.png"></div>
+                    <div class="section__text"><a href="#">Iconstruye</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="section__marca"> <img src="img/icons/logo-3.png"></div>
+              <div class="section__slider">
+                <div class="swiper-container swiper-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide dscroll">
+                      <div class="section__slide__image"><a href="#"><img src="img/uploads/1.jpeg"></a></div>
+                    </div>
+                    <div class="swiper-slide dscroll">
+                      <div class="section__slide__image"><a href="#"><img src="img/uploads/2.jpeg"></a></div>
+                    </div>
+                    <div class="swiper-slide dscroll">
+                      <div class="section__slide__image"><a href="#"><img src="img/uploads/3.jpeg"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <footer>
       <div class="footer__wrap">
         <div class="footer__body">
@@ -103,7 +176,7 @@
             <div class="col-md-4">
               <div class="footer__logo"><img src="img/icons/logo-redmat-blanco.png"></div>
               <div class="footer__info">
-                <p>Quisque tellus senectus inceptos ligula eget erat gravida nam habitasse risus senectus non pulvinar fusce.
+                <p>Tristique phasellus aliquet vehicula eu nisi venenatis senectus suscipit blandit vestibulum neque nostra etiam tortor.
                 </p>
               </div>
             </div>

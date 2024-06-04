@@ -459,6 +459,10 @@ app.modal = {
       $(".modal--resetpass").removeClass("modal--in");
       return $(".modal--register").removeClass("modal--in");
     });
+    $("[data-modalvideo-open]").click(function(e) {
+      e.preventDefault();
+      return app.modal.open(".modal--video");
+    });
     $(".modal__close").click(function() {
       return app.modal.close($(this).closest(".modal"));
     });
@@ -660,6 +664,35 @@ app.swiper = {
         }
       }
     });
+  }
+};
+
+app.youtube = {
+  init: function() {
+    $('.play:not(.played), .playhome:not(.played)').click(function() {
+      var close, html, id, iframe, options, url, verif;
+      id = $(this).attr("data-id");
+      verif = $(this).attr("data-verif");
+      $('.yt-video').addClass("played");
+      $('.video-bg').fadeOut();
+      options = ['rel=0', 'controls=1', 'showinfo=0', 'autoplay=1', 'autohide=1', 'iv_load_policy=3'];
+      url = 'https://www.youtube.com/embed/' + id + '?' + options.join('&');
+      iframe = '<iframe class="yt-iframe" width="420" height="315" src="' + url + '" frameborder="0" allowfullscreen></iframe>';
+      close = '<button class="yt-close"><span class="fa fa-close"></span></button>';
+      html = '<div class="yt">' + iframe + close + '</div>';
+      return $(".yt-video").append(iframe);
+    });
+    $('.playhome:not(.played)').click();
+    return $(document).on("click", ".modal__close", function() {
+      return app.youtube.close();
+    });
+  },
+  close: function() {
+    $(".yt-video").addClass("yt--out");
+    return setTimeout(function() {
+      $(".yt-video iframe").remove();
+      return $(".yt-video").removeClass("yt--out");
+    }, 400);
   }
 };
 

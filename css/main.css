@@ -4208,7 +4208,7 @@ section.section--stand .section__stand .section__marca img {
 section.section--stand .section__stand .section__slider {
   position: absolute;
   z-index: 3;
-  top: 63%;
+  top: 65%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -4255,7 +4255,7 @@ section.section--stand .section__stand .section__slider .section__slide__image {
 section.section--stand .section__stand .section__videoiframe {
   position: absolute;
   z-index: 3;
-  top: 37%;
+  top: 39%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);

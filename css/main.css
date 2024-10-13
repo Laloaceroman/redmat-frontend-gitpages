@@ -1685,6 +1685,26 @@ article.article--category .btn {
   max-width: 100%;
   width: 100%;
 }
+.asesor {
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  z-index: $z-index-asesor;
+  color: #1d3a59;
+  border-radius: 6px;
+  min-height: 80px;
+  transition: 0.3s;
+  display: table;
+  z-index: 10;
+  max-width: 60px;
+}
+.asesor .asesor__icon img {
+  width: 60px;
+}
 .bg {
   position: absolute;
   top: 0;
@@ -4050,6 +4070,11 @@ section.section--stand {
     margin-top: 90px;
   }
 }
+@media (min-width: 1500px) {
+  section.section--stand {
+    zoom: 80%;
+  }
+}
 section.section--stand .section__bg {
   opacity: 0.3;
 }
@@ -4204,6 +4229,63 @@ section.section--stand .section__stand .section__marca img {
     max-width: 180px;
     max-height: 80px;
   }
+}
+section.section--stand .section__stand .section__asesor {
+  position: absolute;
+  z-index: 3;
+  top: 20%;
+  left: 28%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 230px;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  border-radius: 20px;
+  border: 1px solid rgba(0,0,0,0.1);
+  max-width: 80%;
+  min-height: 85px;
+  border: 10px solid rgba(0,0,0,0.3);
+}
+@media (min-width: 1500px) {
+  section.section--stand .section__stand .section__asesor {
+    top: 24%;
+    left: 20%;
+  }
+}
+section.section--stand .section__stand .section__asesor h4 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+  -ms-flex-pack: felx-start;
+      justify-content: felx-start;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+}
+section.section--stand .section__stand .section__asesor h4 span {
+  margin-right: 2px;
+}
+section.section--stand .section__stand .section__asesor p {
+  font-size: 14px;
+  line-height: 14px;
+  background-color: rgba(0,0,0,0.1);
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  font-weight: 500;
+}
+section.section--stand .section__stand .section__asesor p:last-child {
+  margin-bottom: 0;
 }
 section.section--stand .section__stand .section__slider {
   position: absolute;

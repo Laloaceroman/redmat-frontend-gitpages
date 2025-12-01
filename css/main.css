@@ -3566,17 +3566,6 @@ section.section--steps .section__steps {
   -ms-flex-pack: center;
       justify-content: center;
 }
-section.section--steps .section__steps:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 100%;
-  height: 5px;
-  background-color: #ff9015;
-}
 section.section--steps .section__steps .section__step {
   text-align: center;
   padding: 20px;
@@ -4481,6 +4470,44 @@ section.section--stand .section__stand .section__actions .section__actions__box 
   left: 0;
   width: 100%;
   height: 100%;
+}
+section.section--concurso .section__eff {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  opacity: 0.1;
+}
+section.section--concurso .section__eff img {
+  height: 40vh;
+}
+section.section--concurso .section__header {
+  text-align: center;
+}
+section.section--concurso .section__image img {
+  max-height: 300px;
+}
+section.section--concurso .section__content {
+  position: relative;
+  overflow: hidden;
+  color: #1d3a59;
+  transition: 0.2s;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+@media (min-width: 720px) {
+  section.section--concurso .section__content {
+    padding: 20px;
+  }
+}
+section.section--concurso .section__content .btn {
+  margin-bottom: 10px;
+}
+section.section--concurso .section__content span {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
 }
 @font-face {
   font-family: 'swiper-icons';
